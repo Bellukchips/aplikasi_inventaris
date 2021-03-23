@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB99BB9D-AF9C-48C3-A55A-55F4D28EC481}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Aplikasi_inventaris.My.MyApplication</StartupObject>
+    <RootNamespace>Aplikasi_inventaris</RootNamespace>
+    <AssemblyName>Aplikasi_inventaris</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Aplikasi_inventaris.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Aplikasi_inventaris.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connect.vb" />
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hak_akses.Designer.vb">
+      <DependentUpon>Hak_akses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hak_akses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hasil_cari.Designer.vb">
+      <DependentUpon>Hasil_cari.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hasil_cari.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventarisir.Designer.vb">
+      <DependentUpon>Inventarisir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Inventarisir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inventaris_barangDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetdataku.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetdataku.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetInventaris.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetInventaris.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetInventaris1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetInventaris1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetJenis.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetJenis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetNama_jenis.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetNama_jenis.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetNama_ruang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetNama_ruang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetPegawai.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetPegawai.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetPegawai1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetPegawai1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetPetugas.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetPetugas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetPetugas1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetPetugas1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetRuang.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetRuang.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="inventaris_barangDataSetRuang2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>inventaris_barangDataSetRuang2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MENUU.Designer.vb">
+      <DependentUpon>MENUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MENUU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pegawai.Designer.vb">
+      <DependentUpon>pegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="pegawai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backup.Designer.vb">
+      <DependentUpon>backup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="backup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register_peminjam.Designer.vb">
+      <DependentUpon>Register_peminjam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register_peminjam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_bulan.Designer.vb">
+      <DependentUpon>Report_bulan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report_bulan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report_pegawai.Designer.vb">
+      <DependentUpon>report_pegawai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report_pegawai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ruang.Designer.vb">
+      <DependentUpon>Ruang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ruang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok_barang.Designer.vb">
+      <DependentUpon>Stok_barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hak_akses.resx">
+      <DependentUpon>Hak_akses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hasil_cari.resx">
+      <DependentUpon>Hasil_cari.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventarisir.resx">
+      <DependentUpon>Inventarisir.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MENUU.resx">
+      <DependentUpon>MENUU.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pegawai.resx">
+      <DependentUpon>pegawai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backup.resx">
+      <DependentUpon>backup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register_peminjam.resx">
+      <DependentUpon>Register_peminjam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_bulan.resx">
+      <DependentUpon>Report_bulan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report_pegawai.resx">
+      <DependentUpon>report_pegawai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ruang.resx">
+      <DependentUpon>Ruang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok_barang.resx">
+      <DependentUpon>Stok_barang.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inventaris_barangDataSet.xsc">
+      <DependentUpon>inventaris_barangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSet.xss">
+      <DependentUpon>inventaris_barangDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSet1.xsc">
+      <DependentUpon>inventaris_barangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSet1.xss">
+      <DependentUpon>inventaris_barangDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetdataku.xsc">
+      <DependentUpon>inventaris_barangDataSetdataku.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetdataku.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetdataku.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetdataku.xss">
+      <DependentUpon>inventaris_barangDataSetdataku.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris.xsc">
+      <DependentUpon>inventaris_barangDataSetInventaris.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetInventaris.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris.xss">
+      <DependentUpon>inventaris_barangDataSetInventaris.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris1.xsc">
+      <DependentUpon>inventaris_barangDataSetInventaris1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetInventaris1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetInventaris1.xss">
+      <DependentUpon>inventaris_barangDataSetInventaris1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetJenis.xsc">
+      <DependentUpon>inventaris_barangDataSetJenis.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetJenis.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetJenis.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetJenis.xss">
+      <DependentUpon>inventaris_barangDataSetJenis.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetNama_jenis.xsc">
+      <DependentUpon>inventaris_barangDataSetNama_jenis.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetNama_jenis.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetNama_jenis.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetNama_jenis.xss">
+      <DependentUpon>inventaris_barangDataSetNama_jenis.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetNama_ruang.xsc">
+      <DependentUpon>inventaris_barangDataSetNama_ruang.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetNama_ruang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetNama_ruang.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetNama_ruang.xss">
+      <DependentUpon>inventaris_barangDataSetNama_ruang.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai.xsc">
+      <DependentUpon>inventaris_barangDataSetPegawai.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetPegawai.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai.xss">
+      <DependentUpon>inventaris_barangDataSetPegawai.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai1.xsc">
+      <DependentUpon>inventaris_barangDataSetPegawai1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetPegawai1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetPegawai1.xss">
+      <DependentUpon>inventaris_barangDataSetPegawai1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas.xsc">
+      <DependentUpon>inventaris_barangDataSetPetugas.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetPetugas.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas.xss">
+      <DependentUpon>inventaris_barangDataSetPetugas.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas1.xsc">
+      <DependentUpon>inventaris_barangDataSetPetugas1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetPetugas1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetPetugas1.xss">
+      <DependentUpon>inventaris_barangDataSetPetugas1.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetRuang.xsc">
+      <DependentUpon>inventaris_barangDataSetRuang.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetRuang.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetRuang.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetRuang.xss">
+      <DependentUpon>inventaris_barangDataSetRuang.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetRuang2.xsc">
+      <DependentUpon>inventaris_barangDataSetRuang2.xsd</DependentUpon>
+    </None>
+    <None Include="inventaris_barangDataSetRuang2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>inventaris_barangDataSetRuang2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="inventaris_barangDataSetRuang2.xss">
+      <DependentUpon>inventaris_barangDataSetRuang2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel1">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

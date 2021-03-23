@@ -1,0 +1,764 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Aplikasi_inventaris
+</name>
+</assembly>
+<members>
+<member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai.pegawaiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai.pegawaiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai.pegawaiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.pegawaiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetPegawai)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawaiTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenis.jenisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenis.jenisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenis.jenisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenis">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.jenisTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetJenis,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetJenis,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetJenis,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetJenis)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetJenisTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas.petugasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas.petugasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas.petugasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.petugasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetPetugas)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugasTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang.ruangDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang.ruangRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang.ruangRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.ruangTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetRuang)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuangTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:Aplikasi_inventaris.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aplikasi_inventaris.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Aplikasi_inventaris.My.Resources.Resources.Capture">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Aplikasi_inventaris.My.Resources.Resources.search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Aplikasi_inventaris.My.Resources.Resources.user">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Aplikasi_inventaris.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1.inventarisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1.inventarisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1.inventarisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.inventarisTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetInventaris1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1.petugasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1.petugasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1.petugasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.petugasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetPetugas1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetPetugas1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPetugas1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenis.jenisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenis.jenisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenis.jenisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenis">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.jenisTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_jenis,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_jenis,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_jenis,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetNama_jenis)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_jenisTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet.pegawaiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet.pegawaiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet.pegawaiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.pegawaiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1.petugasDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1.petugasRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1.petugasRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.petugasTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSet1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSet1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruang.ruangDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruang.ruangRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruang.ruangRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruang">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.ruangTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_ruang,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_ruang,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetNama_ruang,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetNama_ruang)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetNama_ruangTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2.ruangDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2.ruangRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2.ruangRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.ruangTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetRuang2,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetRuang2)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetRuang2TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris.inventarisDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris.inventarisRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris.inventarisRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventaris">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.inventarisTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetInventaris,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetInventaris)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetInventarisTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1.pegawaiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1.pegawaiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1.pegawaiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.pegawaiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetPegawai1,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetPegawai1)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetPegawai1TableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdataku.pegawaiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdataku.pegawaiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdataku.pegawaiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdataku">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.pegawaiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.UpdateUpdatedRows(Aplikasi_inventaris.inventaris_barangDataSetdataku,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.UpdateInsertedRows(Aplikasi_inventaris.inventaris_barangDataSetdataku,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.UpdateDeletedRows(Aplikasi_inventaris.inventaris_barangDataSetdataku,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.UpdateAll(Aplikasi_inventaris.inventaris_barangDataSetdataku)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:Aplikasi_inventaris.inventaris_barangDataSetdatakuTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>
